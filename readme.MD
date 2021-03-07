@@ -1,4 +1,7 @@
-
+## Tecnologias utilizadas
+- [x] React.JS
+- [x] Styled Components
+- [x] Typescript
 <div align="center">
   <h1 align=center>
     <a href="https://www.typescriptlang.org/">
@@ -13,11 +16,6 @@
 ## Funcionalidades
 - Na página home é possível pesquisar os filmes por nome ou por gênero
 - Na página movie aparecem as descrições do filme selecionado e trailer do filme
-
-## Tecnologias utilizadas
-- [x] React.JS
-- [x] Styled Components
-- [x] Typescript
 
 ## Instalação
 
