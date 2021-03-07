@@ -27,7 +27,6 @@ const Dashboard: React.FC = () => {
   const fetchMovie = useCallback(async () => {
     const response = await api.get<IMovieResponse>(`/movie/${params.id}?append_to_response=videos`)
     setMovie(response.data)
-    console.log(response.data)
   }, [params]);
 
   useEffect(() => {
@@ -38,9 +37,6 @@ const Dashboard: React.FC = () => {
     fetchMovie();
   }, [fetchMovie]);
 
-  useEffect(() => {
-    console.log(params)
-  }, [params])
 
 
   function getGenre(id: number): string {
@@ -104,7 +100,7 @@ const Dashboard: React.FC = () => {
               <ScrollContainer>
                 <RelatedGenres>
                   {movie.genres && movie.genres.map(genre => (
-                    <RelatedGenre onClick={() => console.log(movie)} key={genre.id}>{getGenre(genre.id)}</RelatedGenre>
+                    <RelatedGenre key={genre.id}>{getGenre(genre.id)}</RelatedGenre>
                   )
                   )}
                 </RelatedGenres>

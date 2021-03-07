@@ -18,7 +18,6 @@ export const formatValue = (value: number): string =>
 export const parseRuntime = (runtime: number): string => {
   let hours = Math.floor(runtime / 60);
   let minutes = runtime - hours * 60;
-  console.log(hours, minutes)
   return `${hours}h${minutes}m`;
 }
 export const parseLanguage = (language: string): string => {
