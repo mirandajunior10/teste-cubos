@@ -17,7 +17,7 @@ Você precisa ter instalado em sua máquina as seguintes ferramentas:
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/mirandajunior10/teste-cubos>
+$ git clone <https://github.com/mirandajunior10/teste-cubos.git>
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd teste-cubos
