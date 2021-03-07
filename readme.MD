@@ -36,7 +36,7 @@ $ npm start
 ou 
 $ yarn start
 
-# O projeto inciará na porta:300 - acesse <http://localhost:3000>
+# O projeto inciará na porta:3000 - acesse <http://localhost:3000>
 ```
 
 <h3 align="center">
