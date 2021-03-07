@@ -126,7 +126,7 @@ const Dashboard: React.FC = () => {
 
           movie.videos && movie.videos.results[0] && (
 
-            <iframe width="100%" height="600" src={`https://www.youtube.com/embed/${movie.videos.results[0].key}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <iframe title="trailer" width="100%" height="600" src={`https://www.youtube.com/embed/${movie.videos.results[0].key}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
           )
         }
       </Video>

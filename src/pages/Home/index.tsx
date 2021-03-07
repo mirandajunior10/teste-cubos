@@ -10,7 +10,6 @@ import IMovie from '../../interfaces/IMovie';
 import IGenresResponse from '../../interfaces/IGenresResponse';
 import IMoviesResponse from '../../interfaces/IMoviesReponse';
 import { parseDate } from '../../utils/parseFunctions';
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 const Home: React.FC = () => {
 
@@ -24,8 +23,6 @@ const Home: React.FC = () => {
   const [totalPages, setTotalPages] = useState<number>(0)
   const [pages, setPages] = useState<number[]>([])
   const [currentSearchPage, setCurrentSearchPage] = useState<number>(1)
-  const [imageURL, setImageUrl] = useState<string>('http://image.tmdb.org/t/p/original/')
-  const { width } = useWindowDimensions()
 
   const fetchGenres = useCallback(async () => {
     const response = await api.get<IGenresResponse>('/genre/movie/list')
@@ -130,16 +127,6 @@ const Home: React.FC = () => {
     setPaginatedMovies(movies.slice(((currentPage - 1) * 5), (currentPage * 5)))
   }, [movies, currentPage])
 
-/*   useEffect(() => {
-    if(width > 1024){
-      setImageUrl("http://image.tmdb.org/t/p/w300/")
-
-    }
-    else{
-      setImageUrl("http://image.tmdb.org/t/p/original/")
-    }
-  },[width]) */
-
   function getGenre(id: number): string {
     const genre = genres.find(genre => genre.id === id);
 
@@ -173,7 +160,7 @@ const Home: React.FC = () => {
                   {movie.poster_path && (
                     <>
 
-                      <img alt={movie.title} src={`${imageURL}${movie.poster_path}`} />
+                      <img alt={movie.title} src={`http://image.tmdb.org/t/p/original/${movie.poster_path}`} />
                     </>
                   )}
                 </Image>

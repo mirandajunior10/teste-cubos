@@ -1,6 +1,4 @@
-import styled, { css, keyframes } from 'styled-components';
-import { shade } from 'polished';
-
+import styled, { css } from 'styled-components';
 interface GenreProps {
   isSelected: boolean;
 }
@@ -195,17 +193,6 @@ export const RelatedGenre = styled.li`
     min-width: 120px;
     text-align: center;
 
-`;
-
-const appearFromLeft = keyframes`
-from{
-  opacity: 0;
-  transform: translateX(-50px);
-}
-to{
-  opacity: 1;
-  transform: translateX(0);
-}
 `;
 
 export const Pages = styled.div`
