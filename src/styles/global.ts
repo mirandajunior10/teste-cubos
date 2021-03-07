@@ -8,6 +8,10 @@ export default createGlobalStyle`
   outline: 0;
 }
 
+a{
+    text-decoration: none;
+  }
+
 body {
   background: #FFF;
   color: #FFF;
@@ -15,7 +19,7 @@ body {
 }
 
 body, input, button{
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Abel', serif;
   font-size: 16px;
 }
 

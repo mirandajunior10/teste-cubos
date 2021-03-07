@@ -41,6 +41,7 @@ export const Genres = styled.div`
 `;
 
 export const Genre = styled.div<GenreProps>`
+font-family: 'Lato', sans-serif;
     padding: 10px;
     margin: 0 10px;
     color: #116193;
@@ -159,11 +160,13 @@ export const Overview = styled.div`
       flex: 1;
       background: #EBEBEB;
       p.release-date{
+        font-family: 'Lato', sans-serif;
         max-height: 20px;
         color:#B8B8B8;
         margin-left: 80px;
       }
       p.overview{
+        font-family: 'Lato', sans-serif;
         color: #606060;
         margin: 3% 0;
         padding: 0 20px;
@@ -180,6 +183,7 @@ export const RelatedGenres = styled.ul`
 `;
 
 export const RelatedGenre = styled.li`
+    font-family: 'Lato', sans-serif;
     color: #116193;
     background: #FFFF;
     padding: 10px;
@@ -235,53 +239,4 @@ ${props =>
     css`
       display:none;
     `}
-`;
-
-export const AnimationContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: ${appearFromLeft} 1s;
-  form {
-    margin: 80px 0;
-    width: 340px;
-    text-align: center;
-
-    h1 {
-      margin-bottom: 24px;
-    }
-
-    a {
-      color: #f4ede8;
-      display: block;
-      margin-top: 24px;
-      text-decoration: none;
-      transition: color 0.2s;
-
-      &:hover {
-        color: ${shade(0.2, '#F4EDE8')};
-      }
-    }
-  }
-
-  > a {
-    color: #ff9900;
-    display: block;
-    margin-top: 24px;
-    text-decoration: none;
-    transition: color 0.2s;
-    display: flex;
-    align-items: center;
-    svg {
-      margin-right: 16px;
-    }
-    &:hover {
-      color: ${shade(0.2, '#FF9900')};
-    }
-  }
-`;
-
-export const Background = styled.div`
-  flex: 1;
-  background-size: cover;
 `;

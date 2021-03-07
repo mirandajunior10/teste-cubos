@@ -1,4 +1,5 @@
 import IGenre from "./IGenre";
+import IVideo from "./IVideo";
 
 export default interface IMovieResponse {
   adult: boolean;
@@ -17,6 +18,7 @@ export default interface IMovieResponse {
   status: string;
   title: string;
   video: boolean;
+  videos: IVideo
   vote_average: number;
   vote_count: number
 }
