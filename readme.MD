@@ -1,3 +1,15 @@
+
+<div align="center">
+  <h1 align=center>
+    <a href="https://www.typescriptlang.org/">
+      <img src="https://img.shields.io/badge/%3C%2F%3E-TypeScript-informational">
+    </a>
+    <a href="https://pt-br.reactjs.org/docs/getting-started.html">
+      <img src="https://img.shields.io/badge/Web-ReactJS-blue">
+    </a>
+  </h1>
+</div>
+
 ## Funcionalidades
 - Na página home é possível pesquisar os filmes por nome ou por gênero
 - Na página movie aparecem as descrições do filme selecionado e trailer do filme
@@ -12,6 +24,7 @@
 ### Pré-requisitos
 Você precisa ter instalado em sua máquina as seguintes ferramentas:
 - [Git](https://git-scm.com)
+- [Node.JS](https://nodejs.org/en/)
 
 ### 🎲 Clonando o repositório
 
@@ -33,7 +46,7 @@ $ yarn install
 
 # Executar o servidor
 $ npm start
-ou 
+ou
 $ yarn start
 
 # O projeto inciará na porta:3000 - acesse <http://localhost:3000>
